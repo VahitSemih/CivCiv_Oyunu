@@ -200,6 +200,5 @@ public class PlayerController : MonoBehaviour
     {
         _jumpForce = _startingJumpFoce;
     }
-
     #endregion
 }
