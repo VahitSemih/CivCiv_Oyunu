@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1917251876335825456
+--- !u!1 &4643659120979697917
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 710093270814937862}
-  - component: {fileID: 3319731510820024607}
+  - component: {fileID: 7376355196145019387}
+  - component: {fileID: 8021757182869204023}
+  - component: {fileID: 652034546133435996}
   m_Layer: 0
-  m_Name: WheatCollectibleVisual
-  m_TagString: Untagged
+  m_Name: GoldWheat
+  m_TagString: GoldWheat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &710093270814937862
+--- !u!4 &7376355196145019387
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917251876335825456}
+  m_GameObject: {fileID: 4643659120979697917}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.70710707, z: -0, w: 0.70710653}
-  m_LocalPosition: {x: 13.249997, y: 2.6599998, z: 4.2499886}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 1
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6113859398426990839}
+  - {fileID: 6219409554915690362}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &3319731510820024607
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8021757182869204023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4643659120979697917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5de58ba8aea7d42bd5d3db79a54e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wheatDesignSO: {fileID: 11400000, guid: f6712090ca3cfb842803bd7448f4d676, type: 2}
+  _playerController: {fileID: 0}
+--- !u!65 &652034546133435996
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917251876335825456}
+  m_GameObject: {fileID: 4643659120979697917}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -52,9 +67,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7747793, y: 1.0235709, z: 0.18258211}
-  m_Center: {x: 0.031425875, y: -0.17939052, z: 3.3733e-15}
---- !u!1 &2868215987105524252
+  m_Size: {x: 0.7815074, y: 1.0348344, z: 0.20651641}
+  m_Center: {x: 0.037739635, y: -0.18029356, z: 0.007485673}
+--- !u!1 &8698729376646625715
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,46 +77,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6113859398426990839}
-  - component: {fileID: 4175067717526919519}
-  - component: {fileID: 7672746129821603691}
+  - component: {fileID: 6219409554915690362}
+  - component: {fileID: 7613835657821626583}
+  - component: {fileID: 5372428266522258807}
+  - component: {fileID: 6981831675099498937}
   m_Layer: 0
-  m_Name: GoldWheat
+  m_Name: GoldWheatVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6113859398426990839
+--- !u!4 &6219409554915690362
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2868215987105524252}
+  m_GameObject: {fileID: 8698729376646625715}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 710093270814937862}
+  m_Father: {fileID: 7376355196145019387}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4175067717526919519
+--- !u!33 &7613835657821626583
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2868215987105524252}
+  m_GameObject: {fileID: 8698729376646625715}
   m_Mesh: {fileID: -4281583460005227431, guid: c9e6df82218dbeb4caa03ac667c5d218, type: 3}
---- !u!23 &7672746129821603691
+--- !u!23 &5372428266522258807
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2868215987105524252}
+  m_GameObject: {fileID: 8698729376646625715}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 1
@@ -118,7 +134,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ab63dc8c110015d4ca815171d92b0fab, type: 2}
+  - {fileID: 2100000, guid: 0e32fa17514e73942983e1bff297e4a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -140,3 +156,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &6981831675099498937
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698729376646625715}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aabe3bee0e9a8e24e985e419d3143c0d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
