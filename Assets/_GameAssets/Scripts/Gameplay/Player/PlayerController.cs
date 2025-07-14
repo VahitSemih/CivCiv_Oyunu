@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public event Action OnPlayerJumped;
+
     public event Action<PlayerState> OnPlayerStateChanged;
 
     [Header("References")]
