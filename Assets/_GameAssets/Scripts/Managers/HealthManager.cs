@@ -10,7 +10,7 @@ public class HealthManager : MonoBehaviour
         _currentHealth = _maxHealth;
     }
 
-    public void Damage(int damageAmount)
+    private void Damage(int damageAmount)
     {
         if (_currentHealth > 0)
         {
@@ -19,11 +19,11 @@ public class HealthManager : MonoBehaviour
 
         if (_currentHealth <= 0)
         {
-            // Karakter ölecek
+            //Karakter Ölecek
         }
     }
 
-    public void Heal(int healAmount)
+    private void Heal(int healAmount)
     {
         if (_currentHealth < _maxHealth)
         {
