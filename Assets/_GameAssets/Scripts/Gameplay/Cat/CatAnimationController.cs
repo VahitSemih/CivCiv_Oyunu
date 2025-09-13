@@ -13,11 +13,20 @@ public class CatAnimationController : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.GetCurrentState() != GameState.Play
+            && GameManager.Instance.GetCurrentState() != GameState.Resume
+            && GameManager.Instance.GetCurrentState() != GameState.GameOver)
+        {
+            _catAnimator.enabled = false;
+            return;
+        }
+
         SetCatAnimations();
     }
 
     private void SetCatAnimations()
     {
+        _catAnimator.enabled = true;
         var currentCatState = _catStateController.GetCurrentState();
 
         switch (currentCatState)

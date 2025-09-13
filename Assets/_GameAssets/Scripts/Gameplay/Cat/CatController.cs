@@ -43,6 +43,14 @@ public class CatController : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.GetCurrentState() != GameState.Play
+            && GameManager.Instance.GetCurrentState() != GameState.Resume
+            && GameManager.Instance.GetCurrentState() != GameState.CutScene)
+        {
+            _catAgent.speed = 0f;
+            return;
+        }
+
         if (_playerController.CanCatChase())
         {
             SetChaseMoment();
